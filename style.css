@@ -3,11 +3,6 @@ body > * {
     box-sizing: border-box;
 }
 
-.menu {
-    display:flex;
-    justify-content: flex-end;
-}
-
 header {
     position: fixed;
     top: 0;
@@ -16,6 +11,10 @@ header {
     height: 3rem;
     z-index: 1000;
     background: silver;
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .mainContent {
@@ -27,9 +26,6 @@ header {
 }
 
 #ludem {
-    position: absolute;
-    left: 0;
-    top: 0;
     margin: 0;
     font-size: 1rem;
 }
@@ -37,4 +33,14 @@ header {
 .mainContent > div {
     min-height: 10rem;
     border: 2px solid blue;
+}
+
+.menu {
+    display:flex;
+    justify-content: flex-end;
+}
+
+.menu li {
+    margin: 0.2rem;
+    list-style: none;
 }
