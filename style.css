@@ -46,25 +46,34 @@ header {
 }
 
 .thumbnail {
-  height: 5rem;
+  height: 12rem;
   filter: grayscale(100%);
   transition: height 0.4s ease-out, filter 0.4s ease-out;
 }
 
 #portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .thumbnailContainer {
-  display: flex;
-  justify-content: flex-start;
-  align-items: stretch;
+  text-align: center;
 
   border: 2px solid gray;
-  height: 5rem;
+  height: auto;
+  width: 15rem;
 
-   transition: height 0.4s ease-out;
+  transition: height 0.4s ease-out;
 }
 
+.thumbnailContainer:hover .thumbnail {
+  filter: none;
+}
+
+
+/*
 .thumbnailContainer:hover {
   border: 2px solid red;
   height: 10rem;
@@ -81,7 +90,7 @@ header {
 
 .left {
   flex-direction: row-reverse;
-}
+}*/
 
 .info {
   margin: 0;
