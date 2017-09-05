@@ -1,5 +1,15 @@
 body * {
   box-sizing: border-box;
+  font-family: 'Abel', sans-serif;
+}
+
+header, footer {
+  background: #242424;
+  
+}
+
+footer {
+  height: 3rem;
 }
 
 header {
@@ -9,8 +19,9 @@ header {
   width: 100%;
   height: 3rem;
   z-index: 1000;
-  background: silver;
-  box-shadow: 0px 1px 10px 0px #888;
+  background: #242424;
+  /*box-shadow: 0px 1px 10px 0px #888;*/
+  color: whitesmoke;
 
   display: flex;
   justify-content: space-between;
@@ -22,18 +33,31 @@ header {
   top: 3rem;
   left: 0;
   width: 100%;
+  min-height: calc(100% - 3rem);
   margin: 0;
+
+  display: flex;
+  flex-direction: column;
 }
 
-#ludem {
-  margin: 0;
-  font-size: 1rem;
+#bio {
+  height: 10rem;
+  background: #242424;
+  color: whitesmoke;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.mainContent > div {
-  min-height: 10rem;
-  border: 2px solid blue;
+#headerTitle {
+  margin: 0;
+  font-size: 2rem;
+  font-family: 'Nothing You Could Do', cursive;
+  letter-spacing: auto;
+  
 }
+
 
 .menu {
   display: flex;
@@ -56,6 +80,9 @@ header {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+
+  flex-grow: 1;
+  
 }
 
 .thumbnailContainer {
@@ -144,4 +171,8 @@ header {
   text-transform: uppercase;
   letter-spacing: 0.5rem;  
   font-weight: bold;
+}
+
+.ludem {
+  font-size: 4rem;
 }
