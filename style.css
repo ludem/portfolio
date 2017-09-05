@@ -68,6 +68,7 @@ header {
   transition: height 0.4s ease-out;
   flex-grow: 1;
   margin: 1rem 0.5rem;
+  font-size: 1.5rem;
 }
 
 .thumbnail:hover .thumbnailImg {
@@ -97,6 +98,9 @@ header {
 .viewProject p {
   border: 0.3rem solid black;
   padding: 1rem;
+  font-family: 'Abel', sans-serif;
+  color: black;
+  text-transform: uppercase;
 }
 
 .viewProject:hover {
@@ -130,9 +134,14 @@ header {
   flex-direction: row-reverse;
 }*/
 
-.info {
-  margin: 0;
+.projectTitle {
+  margin: 0.5rem;
   padding: 0;
   flex-grow: 1;
   text-align: center;
+  font-size: 1rem;
+  font-family: 'Abel', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;  
+  font-weight: bold;
 }
