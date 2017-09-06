@@ -1,11 +1,11 @@
 body * {
   box-sizing: border-box;
-  font-family: 'Abel', sans-serif;
+  font-family: "Abel", sans-serif;
 }
 
-header, footer {
+header,
+footer {
   background: #242424;
-  
 }
 
 footer {
@@ -40,7 +40,7 @@ header {
   flex-direction: column;
 }
 
-#bio {
+#title {
   height: 10rem;
   background: #242424;
   color: whitesmoke;
@@ -53,11 +53,9 @@ header {
 #headerTitle {
   margin: 0;
   font-size: 2rem;
-  font-family: 'Nothing You Could Do', cursive;
+  font-family: "Nothing You Could Do", cursive;
   letter-spacing: auto;
-  
 }
-
 
 .menu {
   display: flex;
@@ -69,20 +67,29 @@ header {
   list-style: none;
 }
 
+.menu li a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  border-bottom: 2px solid whitesmoke;
+}
+
 .thumbnail {
   position: relative;
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
 }
 
 #portfolio {
+  margin-top: 2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 
   flex-grow: 1;
-  
 }
 
 .thumbnailContainer {
@@ -104,7 +111,7 @@ header {
 }
 
 .viewProject {
-  margin:0;
+  margin: 0;
   padding: 1rem;
 
   position: absolute;
@@ -115,17 +122,20 @@ header {
   align-items: center;
   height: 100%;
   width: 100%;
-  
 
   transition: opacity 0.4s ease-out;
   z-index: 2;
-  
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .viewProject p {
   border: 0.3rem solid black;
   padding: 1rem;
-  font-family: 'Abel', sans-serif;
+  font-family: "Abel", sans-serif;
   color: black;
   text-transform: uppercase;
 }
@@ -134,13 +144,11 @@ header {
   opacity: 1;
 }
 
-
 .thumbnailImg {
-  max-width: 100%; 
-  display:block; 
+  max-width: 100%;
+  display: block;
   height: auto;
   transition: filter 0.4s ease-out, opacity 0.4s ease-out;
-  
 }
 /*
 .thumbnailContainer:hover {
@@ -162,17 +170,91 @@ header {
 }*/
 
 .projectTitle {
-  margin: 0.5rem;
+  margin: 0.5rem 0 0 0;
   padding: 0;
   flex-grow: 1;
   text-align: center;
   font-size: 1rem;
-  font-family: 'Abel', monospace;
+  font-family: "Abel", monospace;
   text-transform: uppercase;
-  letter-spacing: 0.5rem;  
+  letter-spacing: 0.5rem;
   font-weight: bold;
+}
+
+.projectSubtitle {
+  font-size: 1rem;
+  margin-top: 0;
 }
 
 .ludem {
   font-size: 4rem;
+  /* animation: 2s ease-out .5s reverse blur;*/
+  text-shadow: 0px 0px 50px #fff;
+  /*border: 0.2rem solid whitesmoke;
+  box-shadow: 0 0 0 1rem whitesmoke;*/
+  padding: 0.2rem 1rem;
+}
+
+/*@keyframes blur {
+from {
+  text-shadow:0px 0px 10px #fff,
+    0px 0px 10px #fff, 
+    0px 0px 25px #fff,
+    0px 0px 25px #fff,
+    0px 0px 25px #fff,
+    0px 0px 25px #fff,
+    0px 0px 25px #fff,
+    0px 0px 25px #fff,
+    0px 0px 50px #fff,
+    0px 0px 50px #fff,
+    0px 0px 50px #7B96B8,
+    0px 0px 150px #7B96B8,
+    0px 10px 100px #7B96B8,
+    0px 10px 100px #7B96B8,
+    0px 10px 100px #7B96B8,
+    0px 10px 100px #7B96B8,
+    0px -10px 100px #7B96B8,
+    0px -10px 100px #7B96B8;
+}
+}
+*/
+
+#bio {
+  margin-top: 8rem;
+  padding-top: 8rem;
+  position: relative;
+  height: 20rem;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+
+  background: silver;
+}
+
+.pic {
+  position: absolute;
+  left: center;
+  top: -7.5rem;
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  background: #242424;
+}
+
+.about {
+  text-decoration: underline;
+}
+
+.info {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.info > p {
+  flex: 1;
+  text-align: center;
 }
