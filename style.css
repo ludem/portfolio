@@ -105,8 +105,8 @@ header {
   position: relative;
   text-align: center;
   height: auto;
-  min-width: 30%;
-  /*max-width: 20rem;*/
+  min-width: 10rem;
+  max-width: 20rem;
 
   transition: height 0.4s ease-out;
   flex-grow: 1;
