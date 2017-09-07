@@ -1,3 +1,7 @@
+html {
+  font-size: calc(10px +2vmin);
+}
+
 body * {
   box-sizing: border-box;
   font-family: "Abel", sans-serif;
@@ -102,7 +106,7 @@ header {
   text-align: center;
   height: auto;
   min-width: 30%;
-  max-width: 20rem;
+  /*max-width: 20rem;*/
 
   transition: height 0.4s ease-out;
   flex-grow: 1;
