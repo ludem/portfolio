@@ -103,7 +103,7 @@ header {
 .thumbnailContainer {
   position: relative;
   text-align: center;
-  min-width: 10rem;
+  min-width: 12rem;
   max-width: 20rem;
 
   transition: height 0.4s ease-out;
@@ -116,11 +116,19 @@ header {
   position: relative;
   width: 100%;
   height: 10rem;
+  overflow: hidden;
 }
 
 .thumbnail:hover .thumbnailImg {
   filter: grayscale(100%);
   opacity: 0.4;
+}
+
+.thumbnailImg {
+  width: 100%;
+  display: block;
+  height: auto;
+  transition: filter 0.4s ease-out, opacity 0.4s ease-out;
 }
 
 .viewProject {
@@ -157,13 +165,6 @@ header {
 
 .viewProject:hover {
   opacity: 1;
-}
-
-.thumbnailImg {
-  width: 100%;
-  display: block;
-  height: auto;
-  transition: filter 0.4s ease-out, opacity 0.4s ease-out;
 }
 
 .projectTitle {
