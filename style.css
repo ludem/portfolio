@@ -2,6 +2,7 @@
 
 html {
   font-size: 3.5vmin;
+  background: whitesmoke;
 }
 
 body * {
@@ -107,7 +108,7 @@ header {
 
   transition: height 0.4s ease-out;
   flex-grow: 1;
-  margin: 1rem 0.5rem;
+  margin: 1rem 0.5rem 2rem 0.5rem;
   font-size: 1.5rem;
 }
 
