@@ -61,7 +61,7 @@ header {
 #titleSection {
   padding: 1rem 1rem;
   background: url("images/back.jpg");
-  height: 10rem;
+  height: auto;
   /*background: #242424;*/
   color: whitesmoke;
   display: flex;
@@ -274,10 +274,10 @@ header {
 
 @keyframes zoomIn {
   from {
-    font-size: 0;
+    transform: scale(0);
   }
   to {
-    font-size: 4rem;
+    transform: scale(1);
   }
 }
 
