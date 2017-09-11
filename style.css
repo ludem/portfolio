@@ -18,7 +18,8 @@ footer {
 }
 
 footer {
-  height: 3rem;
+  text-align: center;
+  color: whitesmoke
 }
 
 header {
