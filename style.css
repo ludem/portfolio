@@ -1,15 +1,8 @@
-/***** COMMON *****/
+/***** COMMON & MEDIA QUERIES*****/
 
 html {
   font-size: 3vmin;
   background: whitesmoke;
-}
-
-@media screen and (orientation: portrait) {
-  html {
-    font-size: 2.5vmax;
-    background: whitesmoke;
-  }
 }
 
 body * {
@@ -43,6 +36,39 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+
+/*** MENU SECTION ***/
+
+
+#ludem {
+  margin: 0;
+  margin-left: 0.3rem;
+  font-size: 2rem;
+  font-family: "Nothing You Could Do", cursive;
+  letter-spacing: auto;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu li {
+  margin: 0.2rem;
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+.menu li a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  border-bottom: 0.1rem solid whitesmoke;
+}
+
+/*** MAIN SECTION ***/
 
 .mainContent {
   position: absolute;
@@ -94,33 +120,7 @@ header {
 }
 
 
-#ludem {
-  margin: 0;
-  margin-left: 0.3rem;
-  font-size: 2rem;
-  font-family: "Nothing You Could Do", cursive;
-  letter-spacing: auto;
-}
 
-.menu {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.menu li {
-  margin: 0.2rem;
-  list-style: none;
-  font-size: 1.2rem;
-}
-
-.menu li a {
-  color: whitesmoke;
-  text-decoration: none;
-}
-
-.menu li a:hover {
-  border-bottom: 0.1rem solid whitesmoke;
-}
 
 #portfolio {
   margin-top: 2rem;
@@ -227,7 +227,7 @@ header {
   margin-top: 14rem;
   padding-top: 8rem;
   position: relative;
-  height: 20rem;
+  height: auto;
 
   display: flex;
   justify-content: flex-start;
@@ -254,24 +254,22 @@ header {
 .info {
   display: flex;
   width: 100%;
+  padding: 0.5rem;
   justify-content: center;
   align-content: flex-start;
 }
 
-.info > p {
+.info > * {
   flex: 1;
+}
+
+.info > p {
   text-align: center;
 }
 
-.elegantshadow {
-  text-shadow: 0 -1px 0 #fff, 0 1px 0 #848282, 0 3px 0 #838383, 0 5px 0 #838181,
-    0 7px 0 #3d3c3c, 0 9px 0 #303030, 0 11px 0 #242424; /*, 0 7px 0 #222,
-    0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a,
-    0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212,
-    0 22px 30px rgba(0, 0, 0, 0.9);*/
-}
 
 
+/**** ANIMATIONS & EFFECTS *****/
 @keyframes zoomIn {
   from {
     transform: scale(0);
@@ -288,5 +286,22 @@ header {
   
   to {
     opacity: 1;
+  }
+}
+
+.elegantshadow {
+  text-shadow: 0 -1px 0 #fff, 0 1px 0 #848282, 0 3px 0 #838383, 0 5px 0 #838181,
+    0 7px 0 #3d3c3c, 0 9px 0 #303030, 0 11px 0 #242424;
+}
+
+/*** MEDIA QUERIES ***/
+@media screen and (orientation: portrait) {
+  html {
+    font-size: 2.5vmax;
+    background: whitesmoke;
+  }
+
+  .info {
+    flex-direction: column;
   }
 }
