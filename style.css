@@ -1,8 +1,15 @@
 /***** COMMON *****/
 
 html {
-  font-size: 4vmin;
+  font-size: 3vmin;
   background: whitesmoke;
+}
+
+@media screen and (orientation: portrait) {
+  html {
+    font-size: 2.5vmax;
+    background: whitesmoke;
+  }
 }
 
 body * {
@@ -49,20 +56,45 @@ header {
   flex-direction: column;
 }
 
-#title {
+/***** TITLE SECTION *****/
+
+#titleSection {
   padding: 1rem 1rem;
   background: url("images/back.jpg");
-  height: auto;
+  height: 10rem;
   /*background: #242424;*/
   color: whitesmoke;
-
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
 }
 
-#headerTitle {
+.title {
+  margin: 0.5rem;
+  padding: 0;
+  font-size: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  font-weight: normal;
+  color: #e0dfdc;
+  letter-spacing: 0.1rem;
+
+  animation: zoomIn 2s, fadeIn 2s;
+}
+
+.hashtags {
+  font-size: 1.5rem;
+  margin:0;
+  padding:0;
+
+  animation: fadeIn 4s;
+}
+
+
+#ludem {
   margin: 0;
   margin-left: 0.3rem;
   font-size: 2rem;
@@ -232,24 +264,29 @@ header {
 }
 
 .elegantshadow {
-  margin: 0.5rem;
-  padding: 0;
-  font-size: 4rem;
-  text-align: center;
-  text-transform: uppercase;
-  text-rendering: optimizeLegibility;
-  font-weight: normal;
-  color: #e0dfdc;
-  letter-spacing: 0.1rem;
-  text-shadow: 0 -1px 0 #fff, 0 1px 0 #848282, 0 2px 0 #838383, 0 3px 0 #838181,
-    0 4px 0 #3d3c3c, 0 5px 0 #303030, 0 6px 0 #242424; /*, 0 7px 0 #222,
+  text-shadow: 0 -1px 0 #fff, 0 1px 0 #848282, 0 3px 0 #838383, 0 5px 0 #838181,
+    0 7px 0 #3d3c3c, 0 9px 0 #303030, 0 11px 0 #242424; /*, 0 7px 0 #222,
     0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a,
     0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212,
     0 22px 30px rgba(0, 0, 0, 0.9);*/
 }
 
-.hashtags {
-  font-size: 1.5rem;
-  margin:0;
-  padding:0;
+
+@keyframes zoomIn {
+  from {
+    font-size: 0;
+  }
+  to {
+    font-size: 4rem;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  
+  to {
+    opacity: 1;
+  }
 }
