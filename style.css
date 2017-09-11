@@ -223,6 +223,8 @@ header {
   max-width: 100%;
 }
 
+/*** BIO & INFO ****/
+
 #bio {
   margin-top: 14rem;
   padding-top: 8rem;
@@ -245,10 +247,18 @@ header {
   width: 15rem;
   border-radius: 50%;
   background: #242424;
+  background: url('images/biopic.jpg');
+  background-size: cover;
+  background-position: top;
+  margin-bottom: 2rem;
 }
 
 .about {
-  text-decoration: underline;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin: 0.2rem;
+  padding: 0;
 }
 
 .info {
@@ -267,6 +277,15 @@ header {
   text-align: center;
 }
 
+#contacts i{
+  transition: transform 0.3s ease-in-out;
+  margin: 1rem;
+  color: #242424;
+}
+
+#contacts i:hover {
+  transform: scale(1.3);
+}
 
 
 /**** ANIMATIONS & EFFECTS *****/
