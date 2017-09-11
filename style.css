@@ -227,7 +227,8 @@ header {
 /*** BIO & INFO ****/
 
 #bio {
-  margin-top: 14rem;
+  margin-top: 12rem;
+  padding-bottom: 1rem;
   padding-top: 8rem;
   position: relative;
   height: auto;
